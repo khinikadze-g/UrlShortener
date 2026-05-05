@@ -19,11 +19,14 @@ resource appServicePlan 'Microsoft.Web/serverfarms@2024-11-01' = {
 resource webApp 'Microsoft.Web/sites@2024-11-01' = {
   name: appName
   location: location
+  identity: {
+    type: 'SystemAssigned'
+  }
   properties:{
     serverFarmId: appServicePlan.id
     httpsOnly: true
     siteConfig: {
-      linuxFxVersion: 'DOTNETCORE|8.0'
+      linuxFxVersion: 'DOTNET|8.0'
       appSettings: [
       {
           name: 'KeyVaultName'
