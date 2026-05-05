@@ -29,8 +29,5 @@ module keyVaultRoleAssignment 'Modules/Secrets/key-vault-role-assignment.bicep' 
             apiService.outputs.principalId
         ]
     }
-    dependsOn: [
-        keyVault
-        apiService
-    ]
+   
 }
