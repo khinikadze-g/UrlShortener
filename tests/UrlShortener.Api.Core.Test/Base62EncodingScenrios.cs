@@ -7,7 +7,7 @@ namespace UrlShortener.Api.Core.Test
         [Theory]
         [InlineData(20, "K")]
         [InlineData(1, "1")]
-        public void Should_Encode_Number_To_Base62(int number, string expected)
+        public void Should_Encode_Number_To_Base62(long number, string expected)
         {
             number.EncodeToBase62().
                 Should().

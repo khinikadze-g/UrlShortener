@@ -7,7 +7,7 @@ namespace UrlShortener.Core
             "0123456789" +
             "ABCDEFGHIJKLMNOPQRSTUVWXYZ" +
             "abcdefghijklmnopqrstuvwxyz";
-        public static string EncodeToBase62(this int number)
+        public static string EncodeToBase62(this long number)
         {
             if (number == 0)
             {
@@ -17,7 +17,7 @@ namespace UrlShortener.Core
             var result = new Stack<char>();
             while (number > 0)
             {
-                result.Push(Alphanumeric[number % 62]);
+                result.Push(Alphanumeric[(int)number % 62]);
                 number /= 62;
             }
             return new string(result.ToArray());
