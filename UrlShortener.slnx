@@ -1,12 +1,12 @@
 <Solution>
-  <Folder Path="/Api/" />
+  <Folder Name="Api" Path="/Api/" />
   
-  <Folder Path="/Api/src/">
+  <Folder Name="src" Path="/Api/src/">
     <Project Path="src/Api/UrlShortener.Api.csproj" />
     <Project Path="src/UrlShortener.Core/UrlShortener.Core.csproj" />
   </Folder>
   
-  <Folder Path="/Api/test/">
+  <Folder Name="test" Path="/Api/test/">
     <Project Path="tests/UrlShortener.Api.Core.Test/UrlShortener.Api.Core.Test.csproj" />
   </Folder>
 </Solution>
