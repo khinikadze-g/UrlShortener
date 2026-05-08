@@ -8,6 +8,8 @@
     <Folder Name="/src/UrlShortener.Core/">
       <Project Path="src/UrlShortener.Core/UrlShortener.Core.csproj" />
     </Folder>
+    <Project Path="src/Api/UrlShortener.Api.csproj" />
+    <Project Path="src/UrlShortener.Core/UrlShortener.Core.csproj" />
 
   </Folder>
 
