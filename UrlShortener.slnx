@@ -15,5 +15,6 @@
 
   <Folder Name="/tests/">
     <Project Path="tests/UrlShortener.Api.Core.Test/UrlShortener.Api.Core.Test.csproj" />
+    <Project Path="tests/UrlShortener.tests/UrlShortener.tests.csproj" Id="f84913d8-cafb-4e79-b0f3-1c4babf7b4aa" />
   </Folder>
 </Solution>
